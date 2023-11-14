@@ -1,0 +1,7 @@
+dbt-env/
+__pycache__/
+config.py
+.vscode/
+logs/
+*.out
+*.log
