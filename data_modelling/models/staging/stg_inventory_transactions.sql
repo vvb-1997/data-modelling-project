@@ -6,5 +6,7 @@ with source as (
                 'inventory_transactions'
             )}}
     )
-SELECT *
+SELECT
+    *,
+    current_timestamp() as ingestion_timestamp
 FROM source

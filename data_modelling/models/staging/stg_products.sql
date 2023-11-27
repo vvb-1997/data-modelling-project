@@ -3,5 +3,7 @@ with source as (
         FROM
 {{source('northwind', 'products')}}
     )
-SELECT *
+SELECT
+    *,
+    current_timestamp() as ingestion_timestamp
 FROM source
